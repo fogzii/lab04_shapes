@@ -8,14 +8,14 @@ stages:
   - checks
     
 before_script:
-  - echo "This message is echoed at the very start!"
+  - npm install
 
 testing:
   stage: checks
   script:
-    - echo 'echo!'
+    - npm test
 
 linting:
   stage: checks
   script:
-    - echo "echo 'echo!'"
+    - npm run lint
